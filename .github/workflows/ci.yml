@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Build and Push MySQL Image
 
 on:
   push:
@@ -38,6 +38,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: "{{defaultContext}}/5.7"
           platforms: linux/amd64,linux/arm64/v8
           load: true
           tags: aesoper/mysql:latest
