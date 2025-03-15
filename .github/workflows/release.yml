@@ -30,7 +30,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: "./5.7"
+          context: "{{defaultContext}}:5.7"
           platforms: linux/amd64,linux/arm64/v8
           load: true
           tags: |
