@@ -40,4 +40,4 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64/v8
           load: true
-          tags: aesoper/mysql:latest
+          tags: aesoper/mysql:latest 
