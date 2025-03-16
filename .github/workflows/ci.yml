@@ -41,4 +41,5 @@ jobs:
           context: "{{defaultContext}}:5.7"
           platforms: linux/amd64,linux/arm64/v8
           load: true
+          push: true
           tags: aesoper/mysql:latest 
